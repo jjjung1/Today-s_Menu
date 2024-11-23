@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using System.IO;
 
 public class CaptureShare : MonoBehaviour
 {
-    public Image targetImage;
     private string filePath;
 
     public void CaptureAndShareImage()
@@ -18,43 +16,23 @@ public class CaptureShare : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        RectTransform rectTransform = targetImage.GetComponent<RectTransform>();
-        Canvas canvas = targetImage.GetComponentInParent<Canvas>();
+        int screenWidth = Screen.width;
+        int screenHeight = Screen.height;
+        Texture2D fullTexture = new Texture2D(screenWidth, screenHeight, TextureFormat.RGB24, false);
+        fullTexture.ReadPixels(new Rect(0, 0, screenWidth, screenHeight), 0, 0);
+        fullTexture.Apply();
 
-        Button buttonToExclude = targetImage.transform.Find("Exit Button").GetComponent<Button>();
-        if (buttonToExclude != null)
-        {
-            buttonToExclude.gameObject.SetActive(false);
-        }
+        int topCropHeight = Mathf.RoundToInt(screenHeight * 0.1f); //위쪽 크롭 비율
+        int bottomCropHeight = Mathf.RoundToInt(screenHeight * 0.24f); //아래쪽 크롭 비율
+        int croppedHeight = screenHeight - (topCropHeight + bottomCropHeight);
 
-        Canvas.ForceUpdateCanvases();
-
-        yield return new WaitForEndOfFrame();
-
-        Vector2 localPos = rectTransform.localPosition;
-        localPos.y += 18;
-
-        Vector2 size = rectTransform.rect.size;
-        float scaleFactor = canvas.scaleFactor; 
-
-        float x = (localPos.x + canvas.pixelRect.width / 2) - (size.x / 2) * scaleFactor;
-        float y = (localPos.y + canvas.pixelRect.height / 2) - (size.y / 2) * scaleFactor;
-        float width = size.x * scaleFactor;
-        float height = size.y * scaleFactor;
-
-        Rect captureRect = new Rect(x, y, width, height);
-
-        Texture2D texture = new Texture2D((int)captureRect.width, (int)captureRect.height, TextureFormat.RGB24, false);
-        texture.ReadPixels(captureRect, 0, 0);
-        texture.Apply();
-
-        if (buttonToExclude != null)
-        {
-            buttonToExclude.gameObject.SetActive(true);
-        }
+        Texture2D croppedTexture = new Texture2D(screenWidth, croppedHeight, TextureFormat.RGB24, false);
+        Color[] pixels = fullTexture.GetPixels(0, bottomCropHeight, screenWidth, croppedHeight);
+        croppedTexture.SetPixels(pixels);
+        croppedTexture.Apply();
 
         filePath = Path.Combine(Application.temporaryCachePath, "CookedMenu.png");
-        File.WriteAllBytes(filePath, texture.EncodeToPNG());
+        File.WriteAllBytes(filePath, croppedTexture.EncodeToPNG());
         Debug.Log($"이미지 저장 경로: {filePath}");
 
         // SNS 공유
@@ -68,6 +46,7 @@ public class CaptureShare : MonoBehaviour
              })
              .Share();
 
-        Destroy(texture);
+        Destroy(fullTexture);
+        Destroy(croppedTexture);
     }
 }
