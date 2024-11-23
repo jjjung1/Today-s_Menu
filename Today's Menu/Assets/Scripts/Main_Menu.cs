@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Main_Menu : MonoBehaviour
 {
     public Image icon;
-
     public Sprite Null;
 
     public GameObject Popup;
@@ -20,5 +19,9 @@ public class Main_Menu : MonoBehaviour
     public void OnClicked()
     {
         Popup.SetActive(true);
+    }
+    public string GetCondition()
+    {
+        return icon.sprite.name;
     }
 }

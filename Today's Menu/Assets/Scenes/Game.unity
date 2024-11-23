@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 335995069}
   - component: {fileID: 335995068}
   - component: {fileID: 335995073}
-  - component: {fileID: 335995072}
+  - component: {fileID: 335995074}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -522,21 +522,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &335995072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335995066}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e740efd3acfba4d4bbf90736a503c32f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  icon: {fileID: 1646802703}
-  Null: {fileID: 21300000, guid: 8f18c9c4ab97e9c4281e216b55e1266f, type: 3}
-  Popup: {fileID: 2081860652}
 --- !u!114 &335995073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 335995072}
+      - m_Target: {fileID: 335995074}
         m_TargetAssemblyTypeName: Main_Menu, Assembly-CSharp
         m_MethodName: OnClicked
         m_Mode: 1
@@ -593,6 +578,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &335995074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335995066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e740efd3acfba4d4bbf90736a503c32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 1646802703}
+  condition: 
+  Null: {fileID: 21300000, guid: 8f18c9c4ab97e9c4281e216b55e1266f, type: 3}
+  Popup: {fileID: 2081860652}
 --- !u!1 &543781034
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,6 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 1646802703}
+  Main_Menu: {fileID: 0}
   Rice: {fileID: 21300000, guid: 34b22a78df469ca47a3c8c6e0d9a30c5, type: 3}
   Noodle: {fileID: 21300000, guid: f01a5e588e264464cbcdbbef800ecafa, type: 3}
   Bread: {fileID: 21300000, guid: 65f3e378fae009a469cdaa08e9a6c16c, type: 3}
