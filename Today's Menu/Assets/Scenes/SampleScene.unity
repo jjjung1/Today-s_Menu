@@ -734,7 +734,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 07c17a4a7e7bd1f43a9f7b97f9827482, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8206576414f13b84ca16c4105edf77e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -867,7 +867,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC624\uBBC0\uB77C\uC774\uC2A4"
+  m_Text: "\uBA54\uB274\uC774\uB984"
 --- !u!222 &109787496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3075,9 +3075,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 940264187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4ba639405c9d24680df039b8d5e966, type: 3}
+  m_Script: {fileID: 11500000, guid: 56b776442cad12b40adb23b6586fed30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropZoneName: noodle
+  foodImage: {fileID: 83953283}
+  foodNameText: {fileID: 109787495}
+  OmuriceImg: {fileID: 21300000, guid: 07c17a4a7e7bd1f43a9f7b97f9827482, type: 3}
 --- !u!1 &974298886
 GameObject:
   m_ObjectHideFlags: 0
