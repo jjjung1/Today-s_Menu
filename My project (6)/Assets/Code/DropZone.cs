@@ -87,12 +87,12 @@ public class DropZone : MonoBehaviour
         {
             int randomResult = random.Next(0, 100);
 
-            if (randomResult < 30) // È®·ü 30%
+            if (randomResult < 2) // È®·ü 2%
             {
 
                 SetFoodInfo(Img1, "½ÄÇý");
             }
-            else if (30 <= randomResult && randomResult < 60)
+            else if (2 <= randomResult && randomResult < 51)
             {
                 SetFoodInfo(Img2, "Á×");
             }

@@ -38,7 +38,7 @@ public class CaptureShare : MonoBehaviour
         // SNS 공유
         new NativeShare()
             .AddFile(filePath)
-            //.SetSubject("제목")
+            .SetSubject("지금, 뭐 먹지?")
             //.SetText("내용")
             .SetUrl("https://github.com/jjjung1/Today-s_Menu")
             .SetCallback((result, target) => {

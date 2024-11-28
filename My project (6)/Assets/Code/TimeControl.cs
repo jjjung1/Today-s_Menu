@@ -25,13 +25,17 @@ public class TimeControl : MonoBehaviour
         {
             return "아침";
         }
-        else if (hour >= 11 && hour < 3)
+        else if (hour >= 11 && hour < 16)
         {
             return "점심";
         }
-        else
+        else if (hour >= 16 && hour < 22)
         {
             return "저녁";
+        }
+        else
+        {
+            return "야식";
         }
     }
 }
