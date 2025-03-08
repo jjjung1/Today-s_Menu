@@ -70,14 +70,37 @@
 친구들에게 공유하는 것도 잊지 마세요!
 
 ## 상세 소개
-(캡쳐)
 
 ## 시연 영상
-(영상)
 
 ## 안드로이드 다운로드
 https://github.com/jjjung1/Today-s_Menu/releases/download/v1.0.1/Today_s_Menu.apk
 
 ## 설치 가이드
-다운로드 링크로 apk 파일을 받아 모바일 설치해주세요!
-(가이드 영상)
+다운로드 링크로 apk 파일을 받아 모바일 설치해주세요! 
+<table>
+  <tr><td>
+    <img src="https://github.com/user-attachments/assets/7fc28db1-960d-4ad0-a295-1e3195d5859e" width="200"><br>
+    <p align="center"><1></p>
+  </td>
+  <td>
+    <img src="https://github.com/user-attachments/assets/b622facd-52a4-4a17-a7b9-b9a5a7aee705" width="200"><br>
+    <p align="center"><2></p>
+  </td>
+  <td>
+    <img src="https://github.com/user-attachments/assets/d5d3e728-56f6-4ed2-845b-90846198b6b5" width="200"><br>
+    <p align="center"><3></p>
+  </td></tr>
+  <tr><td>
+    <img src="https://github.com/user-attachments/assets/673b53ee-f872-4d2e-bc55-1d98e200a701" width="200"><br>
+    <p align="center"><4></p>
+  </td>
+  <td>
+    <img src="https://github.com/user-attachments/assets/4a172b3e-200b-4ccc-bb9c-5b7a748cd6f7" width="200"><br>
+    <p align="center"><5></p>
+  </td>
+  <td>
+    <img src="https://github.com/user-attachments/assets/bdd380ee-0014-4dac-8c31-0bdb72428bf7" width="200"><br>
+    <p align="center"><6></p>
+  </td></tr>
+</table>
