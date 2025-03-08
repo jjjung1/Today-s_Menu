@@ -79,24 +79,24 @@
   <td">
   </td>
   <td>
-    <img src="https://github.com/user-attachments/assets/93d527a5-3677-40aa-99ef-2b3d5107f0ca" width="300"><br>
+    <img src="https://github.com/user-attachments/assets/1bb08060-fcd3-4c8c-b370-c9e03cebe7c0" width="300"><br>
     <p align="center"><2></p>
     <p align="center">메인 페이지</p>
   </td>
   <td>
    <img src="https://github.com/user-attachments/assets/4f9556da-70dd-4a0e-b4ce-27abc44a1a16" width="200"><br>
     <p align="center"><3></p>
-    <p align="center">주재료 선택</p>
+    <p align="center">요리 주재료 선택</p>
   </td></tr>
   <tr><td>
    <img src="https://github.com/user-attachments/assets/cfc2a0b8-6144-40c4-a0f6-311e8915bfd9" width="200"><br>
     <p align="center"><4></p>
-    <p align="center">부재료 뽑기</p>
+    <p align="center">요리 부재료 뽑기</p>
   </td>
   <td>
    <img src="https://github.com/user-attachments/assets/d3534b43-29d4-44a2-bf6f-d48dcba3915c" width="200"><br>
     <p align="center"><5></p>
-    <p align="center">요리 합성</p>
+    <p align="center">요리 합성 (확률형)</p>
   </td>
   <td>
     <img src="https://github.com/user-attachments/assets/b2fe3989-232d-4582-9c95-3142aedb53a8" width="200"><br>
@@ -106,7 +106,7 @@
        <tr><td>
    <img src="https://github.com/user-attachments/assets/c4d857f8-32cd-4cdc-87f0-88eb070e9235" width="200"><br>
     <p align="center"><6></p>
-    <p align="center">요리 뽑기 결과창</p>
+    <p align="center">요리 합성 결과창</p>
   </td>
   <td>
    <img src="https://github.com/user-attachments/assets/33d9ae6a-1a80-4e6d-b1e8-d9e71d456ca2" width="200"><br>
@@ -126,13 +126,13 @@
 </table>
       
 ## 시연 영상
-(영상)
+(영상 링크)
 
 ## 안드로이드 다운로드
 https://github.com/jjjung1/Today-s_Menu/releases/download/v1.0.1/Today_s_Menu.apk
 
 ## 설치 가이드
-다운로드 링크로 apk 파일을 받아 모바일 설치해주세요! 
+다운로드 링크로 apk 파일을 받아 모바일에서 설치해주세요! 
 <table>
   <tr><td>
     <img src="https://github.com/user-attachments/assets/7fc28db1-960d-4ad0-a295-1e3195d5859e" width="200"><br>
